@@ -6,7 +6,7 @@
         <div class="row thumb_row">
             <div class="col thumb_container">
                 <div class="thumb">
-                    <img src="{{ $single['thumb']}}" alt="{{ $single['thumb']}}">
+                    <img src="{{ $comic['thumb']}}" alt="{{ $comic['thumb']}}">
                 </div>
             </div>
         </div>
@@ -17,12 +17,12 @@
                         <div class="col-8">
                             <div class="row">
                                 <div class="col p-0">
-                                    <h1 class="comic_title">{{ $single['title']}}</h1>
+                                    <h1 class="comic_title">{{ $comic['title']}}</h1>
                                 </div>
                             </div>
                             <div class="row price_row mt-2">
                                 <div class="col-8 py-3 px-4 price_border_bottom price_border_right d-flex justify-content-between align-items-center">
-                                    <h5 class="m-0">US. Price: <span class="price">{{ $single['price']}}</span></h5>
+                                    <h5 class="m-0">US. Price: <span class="price">{{ $comic['price']}}</span></h5>
                                     <h5 class="m-0">AVAILABLE</h5>
                                 </div>
                                 <div class="col-4 py-3 price_border_bottom text-center">
@@ -31,7 +31,7 @@
                             </div>
                             <div class="row mt-3">
                                 <div class="col p-0">
-                                    <p class="comic_description">{{ $single['description']}}</p>
+                                    <p class="comic_description">{{ $comic['description']}}</p>
                                 </div>
                             </div>
                         </div>
@@ -56,15 +56,7 @@
                                     <h5>Art by:</h5>
                                 </div>
                                 <div class="col-8">
-                                    <p>
-                                        @foreach($single['artists'] as $key => $artist)
-                                            @if(count($single['artists']) == $key + 1)
-                                                <span>{{ $artist }}</span>
-                                            @else
-                                                <span>{{ $artist }}</span>,
-                                            @endif
-                                        @endforeach
-                                    </p>
+                                    <p>{{$comic['artists']}}</p>
                                 </div>
                             </div>
                             <div class="row mt-3 border_bottom">
@@ -72,15 +64,7 @@
                                     <h5>Written by:</h5>
                                 </div>
                                 <div class="col-8">
-                                    <p>
-                                        @foreach($single['writers'] as $key => $writer)
-                                            @if(count($single['writers']) == $key + 1)
-                                                <span>{{ $writer }}</span>
-                                            @else
-                                                <span>{{ $writer }}</span>,
-                                            @endif
-                                        @endforeach
-                                    </p>
+                                    <p>{{$comic['writers']}}</p>
                                 </div>
                             </div>
                         </div>
@@ -95,7 +79,7 @@
                                     <h5>Series:</h5>
                                 </div>
                                 <div class="col-8">
-                                    <h5 class="action">{{$single['series']}}</h5>
+                                    <h5 class="action">{{$comic['series']}}</h5>
                                 </div>
                             </div>
                             <div class="row pb-2 mt-3 border_bottom">
@@ -103,7 +87,7 @@
                                     <h5>U.S. Price:</h5>
                                 </div>
                                 <div class="col-8">
-                                    <h5 class="comic_description">{{$single['price']}}</h5>
+                                    <h5 class="comic_description">{{$comic['price']}}</h5>
                                 </div>
                             </div>
                             <div class="row pb-2 mt-3 border_bottom">
@@ -111,7 +95,7 @@
                                     <h5>On Sale Date:</h5>
                                 </div>
                                 <div class="col-8">
-                                    <h5 class="comic_description">{{$single['sale_date']}}</h5>
+                                    <h5 class="comic_description">{{$comic['sale_date']}}</h5>
                                 </div>
                             </div>
                         </div>
