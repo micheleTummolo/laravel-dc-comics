@@ -1,7 +1,9 @@
 <header>
     <div class="header_container">
         <div class="logo_container">
-            <img src="{{ Vite::asset('resources/img/dc-logo.png')}}" alt="">
+            <a href="{{route('homepage')}}">
+                <img src="{{ Vite::asset('resources/img/dc-logo.png')}}" alt="">
+            </a>
         </div>
     
         <nav>
@@ -10,7 +12,7 @@
                     <a href="#" class="{{ Route::currentRouteName() == 'caracters' ? 'active' : ''}}">Caracters</a>
                 </li>
                 <li>
-                    <a href="{{route('comics')}}" class="{{ Route::currentRouteName() == 'comics' ? 'active' : ''}}">Comics</a>
+                    <a href="{{route('comics.index')}}" class="{{ Route::currentRouteName() == 'comics.index' ? 'active' : ''}}">Comics</a>
                 </li>
                 <li>
                     <a href="#" class="{{ Route::currentRouteName() == 'movie' ? 'active' : ''}}">Movies</a>

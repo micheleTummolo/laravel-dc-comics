@@ -9,8 +9,7 @@
             </div>
             <div class="card_container mt-3">
                 @foreach($comics as $key => $value)
-                <a href="{{ route('detail-comics', ['param' => $key])}}">
-                    
+                <a href="#">
                     <div class="my_card">
                         <div class="thumb">
                             <img src="{{ $value['thumb']}}" alt="">
