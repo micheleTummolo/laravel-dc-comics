@@ -50,3 +50,46 @@ h4 {
 h5 {
     font-size: 1em;
 }
+
+.my_button {
+    border: 2px solid rgb(2, 130, 249);
+    background-color: rgb(2, 130, 249);
+    padding: .2rem 2rem;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    font-size: .9rem;
+
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.hover_bg_light {
+
+    &:hover {
+        color: black;
+        background-color: transparent;
+    }
+}
+
+.border_radius_0 {
+    border-radius: 0;
+}
+
+.main_lable {
+    position: absolute;
+    top: -21px;
+    left: 155px;
+
+    .label {
+        background-color: rgb(2, 130, 249);
+        width: fit-content;
+        color: white;
+        padding: .3rem 1.5rem;
+    }
+}
+
+.relative {
+    position: relative;
+}
