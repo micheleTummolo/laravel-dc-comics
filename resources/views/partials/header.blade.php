@@ -40,5 +40,9 @@
     </div>
 </header>
 <div class="jumbotron">
-    <img src="{{ Vite::asset('resources/img/jumbotron.jpg')}}" alt="">
+    @if(Route::currentRouteName() == 'homepage')
+        <img src="{{ Vite::asset('resources/img/jumbotron_homepage.png')}}" alt="jumbotron_homepage.png">
+    @else
+        <img src="{{ Vite::asset('resources/img/jumbotron.jpg')}}" alt="jumbotron.jpg">
+    @endif
 </div>

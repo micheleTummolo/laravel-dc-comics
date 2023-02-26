@@ -93,3 +93,39 @@ h5 {
 .relative {
     position: relative;
 }
+
+.welcome_container {
+    background: rgb(42, 5, 65);
+    background: linear-gradient(90deg, rgba(42, 5, 65, 1) 0%, rgba(88, 22, 188, 1) 100%);
+
+    .welcome_text {
+        width: 70%;
+
+        h1 {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 3rem;
+        }
+    }
+
+    .welcome_img {
+        width: 30%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.title {
+    font-weight: 900;
+}
+
+.card {
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+}

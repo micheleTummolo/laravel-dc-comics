@@ -3,15 +3,15 @@
 @section('content')
     <div class="container-fluid bg-light relative">
         <div class="row d-flex justify-content-center py-4">
-            <div class="col-8">
+            <div class="col-9">
                 <div class="row">
                     <div class="col-12 text-center main_lable">
                         <div class="label">
                             <h2 class="m-0">ADD A NEW COMIC</h2>
                         </div>
                     </div> 
-                    <div class="col-12 mt-5">
-                        <h1>Errori</h1>
+                    <div class="col-12 mt-3">
+                        <!-- Sezione errori -->
                     </div>
                     <!-- Form -->
                     <div class="col-12">
