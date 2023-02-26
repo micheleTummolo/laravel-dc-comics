@@ -11,7 +11,15 @@
                         </div>
                     </div> 
                     <div class="col-12 mt-3">
-                        <!-- Sezione errori -->
+                        @if($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endif
                     </div>
                     <!-- Form -->
                     <div class="col-12">
