@@ -102,6 +102,15 @@
                     </div>
                 </div>
             </div>
+            <div class="row d-flex justify-content-center delete_section border-0 py-4">
+                <div class="col-10">
+                    <form action="{{ route('comics.destroy', ['comic' => $comic->id]) }}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger border_radius_0">DELETE COMIC</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </main>
